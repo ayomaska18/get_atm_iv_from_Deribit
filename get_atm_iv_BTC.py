@@ -4,6 +4,9 @@ import seaborn as sns
 import datetime
 import time
 import csv
+import logging
+
+logging.basicConfig(filename='atm_iv_BTC.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
 
 base_url = 'https://deribit.com/api/v2/public'
 
@@ -116,6 +119,7 @@ def main():
         save_to_csv(timestamp, atm_iv, csv_file)
 
         print(atm_iv)
+        logging.info(f"BTC ATM IV: {atm_iv}")
 
         time.sleep(1)
 
