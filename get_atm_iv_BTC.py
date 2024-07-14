@@ -90,7 +90,7 @@ def save_to_csv(timestamp: datetime, atm_iv: int, file_name: str):
         writer.writerow([timestamp, atm_iv])
      
 def main():
-    csv_file = 'atm_iv.csv'
+    csv_file = 'atm_iv_BTC.csv'
 
     with open(csv_file, mode='w', newline='') as file:
         writer = csv.writer(file)
