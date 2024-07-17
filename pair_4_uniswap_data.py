@@ -223,7 +223,7 @@ def main():
 
             print(f"Price Ratio: {price}")
 
-            time.sleep(5)
+            time.sleep(10)
 
         except Exception as e:
             print(f"Exception occured: {e}")
